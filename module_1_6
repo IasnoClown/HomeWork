@@ -5,6 +5,7 @@ print(my_dict.get('Ilay'))
 my_dict['Vitaly'] = 2004 # Задание 2.3
 my_dict['Igor'] = 2005
 del my_dict['Andrey'] # Задание 2.4
+my_dict.pop('Oleg')
 print(my_dict) # Задание 2.5
 my_set = {1, 2, 3, 4, 5, 5, 4, 3, 2, 1,
           False, True, False,
