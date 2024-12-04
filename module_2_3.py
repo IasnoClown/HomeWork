@@ -4,7 +4,7 @@ posit = 0
 while posit < len(my_list):
     if my_list[posit] < 0:
         posit += 1
-        continue
+        break
     print(my_list[posit])
     posit += 1
 else:
