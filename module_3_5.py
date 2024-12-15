@@ -1,8 +1,13 @@
-def get_multiplied_digits(number):  # Задание №1
-    str_number = str(number)  # Задание №2
+# Задача "Рекурсивное умножение цифр"
+def get_multiplied_digits(number):
+    str_number = str(number)
     if len(str_number) > 1:
-        first = int(str_number[0])  # Задание №3
-        return first * get_multiplied_digits(int(str_number[1:])) # Задание №4
+        first = int(str_number[0])
+        remaining = int(str_number[1:])
+        if remaining == 0:
+            return first
+        else:
+            return first * get_multiplied_digits(remaining)
     else:
         return int(str_number)
 
